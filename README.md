@@ -31,13 +31,11 @@ Colors
 =======
 UPDATE mail_template set body_html = replace(replace(body_html, '#875A7B', '#505fb5'), 'rgb(135,90,123)', '#505fb5');
 
--- Footers
-UPDATE mail_template set body_html =
-  replace(body_html, '                      <tr>
-                        <td align="center">
-                            Powered by <a href="https://www.odoo.com">Odoo</a>.
-                        </td>
-                      </tr>', '');
+Footers
+======
+UPDATE mail_template set body_html = replace(body_html, '<tr><td align="center">Powered by <a href="https://www.odoo.com">Odoo</a>.</td></tr>', '');
+                      
+                      
 UPDATE mail_template set body_html =
   replace(body_html, ' using <a href="www.odoo.com" style=" color: #505fb5;"><strong>Odoo</strong></a>', '');
 UPDATE mail_template set body_html =
