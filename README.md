@@ -23,13 +23,13 @@ Feel free to support our efforts by purchasing [our mail modules at app store](h
 
 
 Debrand Email Template
+========
 
 -- note that you should find and replace the 'new color' (#505fb5) prior to running.
 
--- Colors
-UPDATE mail_template set body_html =
-  replace(replace(body_html, '#875A7B', '#505fb5'), 'rgb(135,90,123)', '#505fb5')
-;
+Colors
+=======
+UPDATE mail_template set body_html = replace(replace(body_html, '#875A7B', '#505fb5'), 'rgb(135,90,123)', '#505fb5');
 
 -- Footers
 UPDATE mail_template set body_html =
